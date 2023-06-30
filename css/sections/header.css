@@ -1,8 +1,8 @@
-/* .header__menu,
+.header__menu,
 .header__menu-mobile {
   padding: 20px;
 
-  flex: 1.235;
+  flex: 1.236;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -32,7 +32,7 @@
   gap: 20px;
 
   position: relative;
-} */
+}
 
 .header__nav {
     display: flex;
@@ -43,19 +43,25 @@
     display: flex;
     position: relative;
     padding: 20px;
+    
 }
 
 .header__logo-overlay {
     position: absolute;
     inset: 0; /* Sets the value for all four edges of the element */
     width: 100%;
-
+    z-index: -1;
     background-color: var(--primary-color);
-    z-index: 1; /* to let appear the <h1> on top of it */
+
 }
 
-.header__logo {
-    padding-left: 30px;
-    color: #fff;
-    
+.header__logo h4 {
+  padding-left: 30px;
+
+  font-weight: 700;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-family: var(--playfair-display);
+  color: #fff;
+  opacity: 0.8;
 }
