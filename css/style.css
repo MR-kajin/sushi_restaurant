@@ -123,6 +123,7 @@ a {
   .about-us__button {
     display: none;
   }
+
 }
 
 @media screen and (max-width: 750px) {
@@ -166,13 +167,27 @@ a {
 
 
 /* START: header media querie */
-@media screen and (max-width: 900px) {
+
+
+@media screen and (max-width: 1060px) {
   .header__nav {
     background: var(--primary-color);
+    justify-content: space-between;
   }
 
   .header__menu {
+    background: var(--primary-color);
+  }
+  .header__menu-mobile_box {
+    background: var(--primary-color);
+  }
+  
+  .header__menu {
     display: none;
+  }
+
+  .header__menu li {
+    min-width: 80px;
   }
 
   .header__menu-mobile {
@@ -189,8 +204,9 @@ a {
   }
   .menu-toggle:checked ~ .header__menu  {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 32px;
+    background: var(--primary-color);
 
   }
 
@@ -203,7 +219,14 @@ a {
     display: none;
   }
 }
-
+@media screen and (max-width: 700px){
+  .menu-toggle:checked ~ .header__menu  {
+    flex-direction: column;
+  }
+  .header__menu li {
+    min-width: auto;
+  }
+}
 @media screen and (max-width: 550px) {
   .header__logo {
     padding-left: 0;

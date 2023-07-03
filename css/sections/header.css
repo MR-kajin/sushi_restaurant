@@ -1,8 +1,9 @@
+
 .header__menu,
 .header__menu-mobile {
   padding: 20px;
 
-  flex: 1.235;
+  flex: 1.22;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -33,11 +34,12 @@
 
 .header__nav {
     display: flex;
+    justify-content: space-between;
     overflow: hidden;
-    background: var(--primary-color);
+
 }
 .header__logo {
-    flex: 1; /* it will expand however long it needs to */
+    flex: 1; 
     display: flex;
     position: relative;
     padding: 20px;
@@ -66,7 +68,8 @@
 
 /* Added Nav menu */
 .header__menu-mobile_box {
-  background: var(--primary-color);
+  background: var(--color-creamson);
+  flex: 1.311;
 }
 
 .header__menu-mobile {
