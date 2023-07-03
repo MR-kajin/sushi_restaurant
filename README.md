@@ -1,5 +1,5 @@
 # Sushiman
-https://github.com/MR-kajin/sushi_restaurant/blob/main/Sushiman%20Homepage.png
+![Screenshot](./Sushiman_Homepage.png)
 
 ## Introduction
 Fully responsive HTML & CSS website with animations!
