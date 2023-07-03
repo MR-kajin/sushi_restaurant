@@ -1,5 +1,5 @@
 # Sushiman
-[![Sushi](https://i.ibb.co/dBxww2c/Sushi.png)](https://github.com/MR-kajin/sushi_restaurant/blob/main/Sushiman%20Homepage.png)
+https://github.com/MR-kajin/sushi_restaurant/blob/main/Sushiman%20Homepage.png
 
 ## Introduction
 Fully responsive HTML & CSS website with animations!
