@@ -105,7 +105,6 @@ a {
   scrollbar-width: none; /* Firefox */
 }
 
-
 /* START: about us media queries */
 @media screen and (max-width: 1024px) {
   .about-us {
@@ -178,6 +177,30 @@ a {
 
   .header__menu-mobile {
     display: flex;
+  }
+
+  .header__menu {
+    display: none;
+
+  }
+  .open {
+    display: block;
+
+  }
+  .menu-toggle:checked ~ .header__menu  {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+  }
+
+
+  .menu-toggle:checked + .header__menu-mobile .close{
+    display: block;
+    max-width: 24px;
+  }
+  .menu-toggle:checked + .header__menu-mobile .open{
+    display: none;
   }
 }
 
@@ -291,7 +314,7 @@ a {
     flex-direction: column;
   }
 
-  .trending-drink {
+  .trending-drinks {
     flex-direction: column-reverse;
   }
 
@@ -318,5 +341,7 @@ a {
   .trending__content {
     padding: 32px;
   }
+
+
 }
 /* END: trending media queries */

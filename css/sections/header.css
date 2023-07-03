@@ -2,7 +2,7 @@
 .header__menu-mobile {
   padding: 20px;
 
-  flex: 1.236;
+  flex: 1.235;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -27,16 +27,14 @@
   object-fit: contain;
 }
 
-.header__menu-mobile {
-  display: none;
-  gap: 20px;
 
-  position: relative;
-}
+
+
 
 .header__nav {
     display: flex;
     overflow: hidden;
+    background: var(--primary-color);
 }
 .header__logo {
     flex: 1; /* it will expand however long it needs to */
@@ -65,3 +63,27 @@
   color: #fff;
   opacity: 0.8;
 }
+
+/* Added Nav menu */
+.header__menu-mobile_box {
+  background: var(--primary-color);
+}
+
+.header__menu-mobile {
+  display: none;
+  gap: 20px;
+
+  position: relative;
+}
+
+.menu-toggle {
+  display: none;
+  position: relative;
+}
+.close {
+  display: none;
+}
+.open {
+  display: none;
+}
+
